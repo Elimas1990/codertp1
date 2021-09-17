@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  scroll-behavior: smooth; }
+
+.grid_base_center, #menu-navegacion, .grid-manga {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center; }
+
+#menu-navegacion {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+.main__header__logo-container__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  float: left;
+  margin-top: 0.5em;
+  animation: caida ease-in 1s forwards;
+  animation-delay: 1.8s; }
+
+.main__section {
+  min-height: 50vh;
+  color: whitesmoke; }
+
+.main__section--viajes {
+  background-image: linear-gradient(-45deg, #c92535, #103756); }
+
+.main__section--actividades {
+  background-image: linear-gradient(135deg, #103756, #c92535); }
+
+.main__section--deporte {
+  background-image: linear-gradient(135deg, #103756, #c92535); }
+
+.main__section--mangaanime {
+  background-image: linear-gradient(to top, #c92535, #103756); }
+
+.main__section--gastronomia {
+  background-color: #103756; }
+
+.main__section--idioma {
+  background-color: #c92535; }
+
+.grid-manga {
+  grid-template-columns: repeat(3, 1fr); }
+  @media only screen and (max-width: 1080px) {
+    .grid-manga {
+      grid-template-columns: 1fr 1fr; } }
+  @media only screen and (max-width: 800px) {
+    .grid-manga {
+      grid-template-columns: 1fr; } }
+
+.main__section--deporte__banner {
+  width: 100%;
+  height: 50vh; }
+
+.bg-centrado, .contenedor-viajes, .main__section--deporte__banner, .main__section--mangaanime__container_img {
+  background-position: center;
+  background-size: cover; }
+
+.contenedor-viajes {
+  background-image: url("../img/jardin.jpg"); }
+
+.main__section--deporte__banner {
+  background-image: url("https://motto-jp.com/media/wp-content/uploads/2020/03/4-1.jpeg"); }
+
+.main__section--deporte__banner img {
+  width: 100%;
+  object-fit: cover; }
+
+.contenedor-actividades iframe {
+  margin: auto auto;
+  width: 100%;
+  height: 100%; }
+
+.main__section--gastronomia h2,
+.main__section--mangaanime h2,
+.main__section--idioma h2 {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem; }
+  @media only screen and (min-width: 720px) {
+    .main__section--gastronomia h2:before, .main__section--gastronomia h2:after,
+    .main__section--mangaanime h2:before,
+    .main__section--mangaanime h2:after,
+    .main__section--idioma h2:before,
+    .main__section--idioma h2:after {
+      background-color: white;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 25%; } }
+
+.main__section--mangaanime__container_img:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75); }
+
+.main__section--mangaanime__container {
+  height: 250px;
+  width: 100%;
+  overflow: hidden; }
+  .main__section--mangaanime__container:hover .main__section--mangaanime__container_img {
+    transform: scale(1.2);
+    transition: 1s; }
+
+.main__section--mangaanime__container_img {
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+  .main__section--mangaanime__container_img a {
+    display: none;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 45%;
+    font-size: 30px;
+    text-decoration: none;
+    color: white; }
+
+.main__section--mangaanime__container:hover a,
+.main__section--mangaanime__container:focus a {
+  display: block; }
+  .main__section--mangaanime__container:hover a:hover,
+  .main__section--mangaanime__container:focus a:hover {
+    color: white; }
+
+.main__section--mangaanime__container:hover .main__section--mangaanime__container_img:before,
+.main__section--mangaanime__container:focus .main__section--mangaanime__container_img:before {
+  display: block; }
+
+.main__section--mangaanime__container_img--shonen {
+  background-image: url("https://pbs.twimg.com/media/Dis6IMGXsAcP8x6.jpg"); }
+
+.main__section--mangaanime__container_img--shojo {
+  background-image: url("https://www.rankuzz.com/images/5/3/2/los_mejores_mangas_sh_jo_186235_portada.png"); }
+
+.main__section--mangaanime__container_img--seinen {
+  background-image: url("https://i1.wp.com/www.caninomag.es/wp-content/uploads/2017/10/seinen-19.jpg?resize=634%2C424&ssl=1"); }
+
+.main__section--mangaanime__container_img--codomo {
+  background-image: url("http://photos1.blogger.com/x/blogger2/693/4037/1600/913736/dor%2006.jpg"); }
+
+.main__section--mangaanime__container_img--spokon {
+  background-image: url("https://japocomickismo.files.wordpress.com/2016/09/haikyuu1.jpg?w=697&h=504"); }
+
+.main__section--mangaanime__container_img--mecha {
+  background-image: url("https://thecouch.world/wp-content/uploads/2020/02/565ca81cdbef58e8b8dd93c52ffa92c7.jpg"); }
+
+@media only screen and (max-width: 1080px) {
+  .grid-manga {
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 800px) {
+  .grid-manga {
+    grid-template-columns: 1fr; } }
+
+.main__header__logo-container {
+  transform: translateY(-200px); }
+
+.main__header__titular-container__span, .main__header__titular-container__span-2 {
+  display: inline-block;
+  font-size: 32px;
+  opacity: 0;
+  animation: letras ease-in 1s forwards; }
+
+.main__header__titular-container__span-2 {
+  font-size: 20px; }
+
+@keyframes letras {
+  0% {
+    transform: translateX(0);
+    opacity: 0; }
+  100% {
+    transform: translateX(200px);
+    opacity: 1; } }
+
+.main__header__titular-container {
+  transform: translateX(-200px); }
+
+.main__header__titular-container span:nth-child(1) {
+  animation-delay: 1.8s; }
+
+.main__header__titular-container span:nth-child(2) {
+  animation-delay: 1.6s; }
+
+.main__header__titular-container span:nth-child(3) {
+  animation-delay: 1.4s; }
+
+.main__header__titular-container span:nth-child(4) {
+  animation-delay: 1.2s; }
+
+.main__header__titular-container span:nth-child(5) {
+  animation-delay: 1s; }
+
+.main__header__titular-container span:nth-child(6) {
+  animation-delay: 0.8s; }
+
+.main__header__titular-container span:nth-child(7) {
+  animation-delay: 0.6s; }
+
+.main__header__titular-container span:nth-child(8) {
+  animation-delay: 0.4s; }
+
+.main__header__titular-container span:nth-child(9) {
+  animation-delay: 0.2s; }
+
+.main__header__titular-container span:nth-child(10) {
+  animation-delay: 0s; }
+
+@keyframes caida {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(200px); } }
+
+.main__section__img, .main__section--idioma__img,
+.main__section--gastronomia__img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover; }
+
+.main__section--idioma__img:hover,
+.main__section--gastronomia__img:hover {
+  transition: 0.5s;
+  border: 5px solid purple;
+  cursor: pointer; }
+
+.c-img-actividades {
+  height: 50vh;
+  object-fit: cover; }
