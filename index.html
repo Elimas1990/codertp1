@@ -8,6 +8,7 @@
         <meta name="keywords" content="JAPON, JAPONESA, JAPONES, NIHON, IDIOMA JAPONES, VIAJES A JAPON, GASTRONOMIA JAPONESA, COMIDA JAPONESA, DEPORTE JAPONES, CULTURA JAPONESA, ARTE MARCIAL">
         <link rel="stylesheet" href="styles/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
          <title>Nihon Style</title>
     </head>
     <body>
@@ -46,19 +47,44 @@
                     </div>
                 </div>
             </header>
-            <nav class="container-fluid d-flex flex-column flex-md-row justify-content-evenly sticky-top text-light bg-dark p-2 text-center" >
-                <a class="text-decoration-none text-light" href="#s-viajes">Viajes</a>
-                <a class="text-decoration-none text-light" href="#s-actividades">Actividades</a>
-                <a class="text-decoration-none text-light" href="#s-gastronomia">Gastronomía</a>
-                <a class="text-decoration-none text-light" href="#s-mangaanime">Manga Anime</a>
-                <a class="text-decoration-none text-light" href="#s-idioma">Idioma</a>
-                <a class="text-decoration-none text-light" href="#s-deporte">Deporte</a>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" >
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSecciones" aria-controls="navbarSecciones" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSecciones">
+                        <ul class="navbar-nav m-auto mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link text-decoration-none text-center" aria-current="page" href="#s-viajes">Viajes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-center"  href="#s-actividades">Actividades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-center" href="#s-gastronomia">Gastronomía</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-center"  href="#s-mangaanime">Manga Anime</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-center"  href="#s-idioma">Idioma</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-center"  href="#s-deporte">Deporte</a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
             </nav>
+            
             <section class="main__section main__section--viajes" id="s-viajes">
-               <div class="container-fluid">
-                    <div class="row">
+               <div class="container-fluid" >
+                    <div class="row" >
                         <div class="col-lg-4 m-auto text-center">
-                            <h2 class="m-5 main__section--viajes__titulo">Viajes</h2>
+                            <h2 class="m-5 main__section--viajes__titulo" 
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-center"
+                            data-aos-duration="2000">Viajes</h2>
                         </div>
                         <div class="col-lg-8 p-0">
                             <div id="carouselViajes" class="carousel slide carousel-dark main__section--viajes_carousel" data-bs-ride="carousel">
@@ -101,8 +127,8 @@
                </div>
             </section>
             <section class="main__section main__section--actividades" id="s-actividades">
-                <div class="container-fluid">
-                    <div class="row">
+                <div class="container-fluid" >
+                    <div class="row" >
                         <div class="col-lg-8 p-0  order-1 order-lg-0">
                             <div id="carouselActividades" class="carousel slide carousel-dark main__section--actividades__carousel" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
@@ -141,82 +167,114 @@
                             </div>
                         </div>
                         <div class="col-lg-4 m-auto text-center order-0 order-lg-1 h-100">
-                            <h2 class="m-5 main__section--actividades__titulo">Actividades</h2>
+                            <h2 class="m-5 main__section--actividades__titulo" 
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">Actividades</h2>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="main__section main__section--gastronomia" id="s-gastronomia">
-                <h2><span class="mx-5">Gastronomía</span></h2>
-                <div class="d-flex justify-content-between align-items-end flex-wrap text-center">
-                    <div class="mx-auto main__section--gastronomia__imgcontainer">
-                        <h4>Nueva casa japonesa</h4>
-                        <img class="main__section--gastronomia__img" src="img/casa_japonesa.jpg" alt="">
-                        <p>CABA, Humberto 1º 2357</p>
-                    </div>
-                    <div class="mx-auto">
-                        <h4>Furaibo</h4>
-                        <img  class="main__section--gastronomia__img" src="img/furaibo.jpg" alt="">
-                        <p>CABA, Adolfo Alsina 429</p>
-                    </div>
-                    <div class="mx-auto">
-                        <h4>Ichisou</h4>
-                        <img class="main__section--gastronomia__img" src="img/ichisou.jpg" alt="">
-                        <p>CABA, Venezuela 2145</p>
-                    </div>
-                    <div class="mx-auto">
-                        <h4>Nippori</h4>
-                        <img class="main__section--gastronomia__img" src="img/nippori.jpg" alt="">
-                        <p>CABA, Mendoza 1599</p>
-                    </div>
-                    <div class="mx-auto">
-                        <h4>San Telmo Shokudo</h4>
-                        <img class="main__section--gastronomia__img" src="img/santelmo_shokudo.jpg" alt="">
-                        <p>CABA, Defensa 910</p>
+                <div class="container-fluid" >
+                    <h2 data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="1500"><span class="mx-5">Gastronomía</span></h2>
+                    <div class="d-flex justify-content-between align-items-end flex-wrap text-center">
+                        <div class="mx-auto main__section--gastronomia__imgcontainer" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >Nueva casa japonesa</h4>
+                            <img class="main__section--gastronomia__img" src="img/casa_japonesa.jpg" alt="">
+                            <p>CABA, Humberto 1º 2357</p>
+                        </div>
+                        <div class="mx-auto main__section--gastronomia__imgcontainer" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >Furaibo</h4>
+                            <img  class="main__section--gastronomia__img" src="img/furaibo.jpg" alt="">
+                            <p>CABA, Adolfo Alsina 429</p>
+                        </div>
+                        <div class="mx-auto main__section--gastronomia__imgcontainer" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >Ichisou</h4>
+                            <img class="main__section--gastronomia__img"  src="img/ichisou.jpg" alt="">
+                            <p>CABA, Venezuela 2145</p>
+                        </div>
+                        <div class="mx-auto main__section--gastronomia__imgcontainer" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >Nippori</h4>
+                            <img class="main__section--gastronomia__img" src="img/nippori.jpg" alt="">
+                            <p>CABA, Mendoza 1599</p>
+                        </div>
+                        <div class="mx-auto main__section--gastronomia__imgcontainer" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >San Telmo Shokudo</h4>
+                            <img class="main__section--gastronomia__img" src="img/santelmo_shokudo.jpg" alt="">
+                            <p>CABA, Defensa 910</p>
+                        </div>
                     </div>
                 </div>
+                
             </section>
             <section class="main__section main__section--mangaanime" id="s-mangaanime">
-                <div class="container-fluid">
-                    <h2><span class="mx-5">Manga Anime</span></h2>
+                <div class="container-fluid" >
+                    <h2 data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="1500" ><span class="mx-5">Manga Anime</span></h2>
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 p-4">
-                            <div class="main__section--mangaanime__container" >
+                            <div class="main__section--mangaanime__container"  data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
                                 <div class="main__section--mangaanime__container_img main__section--mangaanime__container_img--shonen" >
                                     <a href="#">SHONEN</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 p-4">
-                            <div class="main__section--mangaanime__container" >
+                            <div class="main__section--mangaanime__container" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000" >
                                 <div class="main__section--mangaanime__container_img main__section--mangaanime__container_img--shojo" >
                                     <a href="#">SHOJO</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 p-4">
-                            <div class="main__section--mangaanime__container" >
+                            <div class="main__section--mangaanime__container" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000" >
                                 <div class="main__section--mangaanime__container_img main__section--mangaanime__container_img--seinen" >
                                     <a href="#">SEINEN</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 p-4">
-                            <div class="main__section--mangaanime__container" >
+                            <div class="main__section--mangaanime__container" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000" >
                                 <div class="main__section--mangaanime__container_img main__section--mangaanime__container_img--codomo" >
                                     <a href="#">CODOMO</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 p-4">
-                            <div class="main__section--mangaanime__container" >
+                            <div class="main__section--mangaanime__container" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000" >
                                 <div class="main__section--mangaanime__container_img main__section--mangaanime__container_img--spokon" >
                                     <a href="#">SPOKON</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 p-4">
-                            <div class="main__section--mangaanime__container" >
+                            <div class="main__section--mangaanime__container" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
                                 <div class="main__section--mangaanime__container_img main__section--mangaanime__container_img--mecha" >
                                     <a href="#">MECHA</a>
                                 </div>
@@ -226,31 +284,43 @@
                 </div>
             </section>
             <section class="main__section main__section--idioma" id="s-idioma">
-                <div class="container-fluid">
-                    <h2><span class="mx-5">Idioma</span></h2>
+                <div class="container-fluid" >
+                    <h2 data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="1500"><span class="mx-5" >Idioma</span></h2>
                     <div class="d-flex justify-content-between align-items-end flex-wrap text-center">
-                        <div class="mx-auto">
-                            <h4>Nichia Gakuin</h4>
+                        <div class="mx-auto" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >Nichia Gakuin</h4>
                             <img class="img-thumbnail main__section--idioma__img" src="https://static.wixstatic.com/media/405688_b3fb34db53774423a524ad691529bea0~mv2.png/v1/fill/w_465,h_465,al_c/405688_b3fb34db53774423a524ad691529bea0~mv2.png" alt="">
                             <p>CABA, Yatay 261</p>
                         </div>
-                        <div class="mx-auto">
-                            <h4>Centro Nikkei</h4>
+                        <div class="mx-auto" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >Centro Nikkei</h4>
                             <img  class="img-thumbnail main__section--idioma__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQryG8mSKDkXxcbhGsfnrZqWDXZhwDbOqXe1iM4rMe_IesDrD1wvU1nMMtsCoGIJsOfoQA&usqp=CAU" alt="">
                             <p>CABA, Bulnes 841</p>
                         </div>
-                        <div class="mx-auto">
-                            <h4>Centro Universitario<br>de Idiomas</h4>
+                        <div class="mx-auto" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >Centro Universitario<br>de Idiomas</h4>
                             <img class="img-thumbnail main__section--idioma__img" src="http://beneficioscredencial.org/wp-content/uploads/2018/01/cui.jpg" alt="">
                             <p>CABA, Av. San Martín 4453</p>
                         </div>
-                        <div class="mx-auto">
-                            <h4>Centro Okinawense</h4>
-                            <img class="img-thumbnail main__section--idioma__img" src="https://scontent.faep9-2.fna.fbcdn.net/v/t1.18169-9/10489717_715649385175749_3508997915110060350_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=rI3CX-k2towAX-Gcj9n&_nc_oc=AQlmGzzD5dJHn2MGsc2Q-j5wqAynN46nbvdWSMc9oSO85MRYfbv53OGOgLuyzXV1thA&_nc_ht=scontent.faep9-2.fna&oh=398ac3007666e1cbd52c628be7514dc5&oe=6144BB7A" alt="">
+                        <div class="mx-auto" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >Centro Okinawense</h4>
+                            <img class="img-thumbnail main__section--idioma__img" src="img/centro_okinawense.jpg" alt="">
                             <p>CABA, Av. San Juan 2651</p>
                         </div>
-                        <div class="mx-auto">
-                            <h4>Asociacion Japones<br>Argentina</h4>
+                        <div class="mx-auto" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <h4 >Asociacion Japones<br>Argentina</h4>
                             <img class="img-thumbnail main__section--idioma__img" src="https://media-exp1.licdn.com/dms/image/C5603AQFi8WCinf3VTA/profile-displayphoto-shrink_800_800/0/1522775192438?e=1635379200&v=beta&t=Ic2Vgl2KyXS0_zL7NZ_U8RHIkRwIn7KiWt0Pz-ENClY" alt="">
                             <p>CABA, Av. Independencia 732</p>
                         </div>
@@ -258,10 +328,15 @@
                 </div>
             </section>
             <section class="main__section main__section--deporte" id="s-deporte">
-                <div class="container-fluid">
+                <div class="container-fluid" >
                     <div class="row">
                         <div class="col-lg-4 m-auto text-center">
-                            <h2 class="m-5 main__section--deporte__titulo">Deportes</h2>
+                            <h2 class="m-5 main__section--deporte__titulo" 
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="2000">Deportes</h2>
                         </div>
                         <div class="col-lg-8 p-0">
                             <div class="main__section--deporte__banner" >
@@ -270,9 +345,32 @@
                     </div>
                 </div>
             </section>
+            <footer>
+                <div class="container-fluid main__section--footer text-center p-5">
+
+                    <span>
+                        <i class="fab fa-instagram mx-5"></i>
+                    </span>
+                    <span >
+                        <i class="fab fa-twitter mx-5"></i>
+                    </span>
+                    <span>
+                        <i class="fab fa-facebook mx-5"></i>
+                    </span>
+                    <span>
+                        <i class="fab fa-youtube mx-5"></i>
+                    </span>
+
+                </div>
+            </footer>
         </main>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/aed1a32c5f.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

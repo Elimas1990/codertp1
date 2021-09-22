@@ -13,6 +13,15 @@ $titulo_delay_max:1.8s;
     scroll-behavior: smooth;
 }
 
+footer{
+    background-color: black;
+    i{
+        font-size: 32px;
+        color: white;
+
+    }
+    
+}
 .grid_base_center{
     display: grid;
     grid-template-rows: auto;
@@ -44,7 +53,8 @@ $seccion-base:
 "viajes" linear-gradient(-45deg,$bg-bordo,$bg-azul),
 "actividades" linear-gradient(135deg,$bg-azul,$bg-bordo),
 "deporte" linear-gradient(135deg,$bg-azul,$bg-bordo),
-"mangaanime" linear-gradient(to top,$bg-bordo,$bg-azul);
+"mangaanime" linear-gradient(to top,$bg-bordo,$bg-azul),
+"footer" linear-gradient(-45deg,$bg-bordo,$bg-azul);
 
 @each $nombre,$bg in $seccion-base{
     .main__section--#{$nombre}{

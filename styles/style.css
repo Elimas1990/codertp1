@@ -7,6 +7,12 @@
   word-spacing: 1px;
   scroll-behavior: smooth; }
 
+footer {
+  background-color: black; }
+  footer i {
+    font-size: 32px;
+    color: white; }
+
 .grid_base_center, #menu-navegacion, .grid-manga {
   display: grid;
   grid-template-rows: auto;
@@ -41,6 +47,9 @@
 
 .main__section--mangaanime {
   background-image: linear-gradient(to top, #c92535, #103756); }
+
+.main__section--footer {
+  background-image: linear-gradient(-45deg, #c92535, #103756); }
 
 .main__section--gastronomia {
   background-color: #103756; }
